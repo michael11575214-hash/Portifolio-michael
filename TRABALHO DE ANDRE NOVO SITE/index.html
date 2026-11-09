@@ -1,0 +1,1413 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carne de Sol de Carlos Chagas - MG | Tradição e Cultura</title>
+
+    <meta name="description"
+        content="Conheça a história, tradição, cultura, produção e importância da Carne de Sol de Carlos Chagas, Minas Gerais.">
+
+    <meta name="keywords"
+        content="Carne de Sol, Carlos Chagas, Minas Gerais, gastronomia mineira, Bahia-Minas, Pedal da Carne de Sol">
+
+    <meta name="author" content="André Gomes Andrade">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f1e8;
+            color: #29231e;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           MENU
+        ========================= */
+
+        header {
+            background:
+                linear-gradient(rgba(45, 22, 10, .85), rgba(45, 22, 10, .85)),
+                url("https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+            min-height: 650px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            width: 100%;
+            padding: 20px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background: rgba(20, 10, 5, .65);
+            backdrop-filter: blur(8px);
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo i {
+            color: #e4a853;
+            margin-right: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            color: #e4a853;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            flex: 1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            animation: aparecer 1.2s ease;
+        }
+
+        .hero span {
+            display: inline-block;
+
+            background: #c87932;
+            padding: 8px 18px;
+
+            border-radius: 30px;
+
+            font-size: .9rem;
+            font-weight: bold;
+
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+
+            margin-top: 30px;
+            padding: 14px 28px;
+
+            background: #e4a853;
+            color: #30190d;
+
+            text-decoration: none;
+            border-radius: 8px;
+
+            font-weight: bold;
+
+            transition: .3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            background: #f0bb68;
+        }
+
+        /* =========================
+           CONTAINER
+        ========================= */
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            padding: 90px 0;
+            border-bottom: 1px solid #ddd2c2;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .titulo span {
+            color: #a6531b;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: .85rem;
+            letter-spacing: 2px;
+        }
+
+        .titulo h2 {
+            font-size: 2.5rem;
+            color: #3a2114;
+            margin-top: 8px;
+        }
+
+        .titulo p {
+            max-width: 750px;
+            margin: 15px auto 0;
+            color: #6d6258;
+        }
+
+        /* =========================
+           INTRODUÇÃO
+        ========================= */
+
+        .introducao {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .introducao img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,.15);
+        }
+
+        .texto h3 {
+            color: #8b451f;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* =========================
+           CARDS
+        ========================= */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+
+            box-shadow: 0 8px 25px rgba(60,40,20,.08);
+
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(60,40,20,.15);
+        }
+
+        .card i {
+            font-size: 2rem;
+            color: #b45f25;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #3d2417;
+        }
+
+        /* =========================
+           PROCESSO
+        ========================= */
+
+        .processo {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .etapa {
+            background: #3c2418;
+            color: white;
+
+            padding: 30px 20px;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            position: relative;
+        }
+
+        .numero {
+            width: 45px;
+            height: 45px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 auto 15px;
+
+            background: #e4a853;
+            color: #3c2418;
+
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* =========================
+           DIFERENÇAS
+        ========================= */
+
+        .tabela {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 8px 25px rgba(0,0,0,.08);
+        }
+
+        th, td {
+            padding: 18px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #4a2a1b;
+            color: white;
+        }
+
+        tr:hover {
+            background: #faf5ed;
+        }
+
+        /* =========================
+           CULTURA
+        ========================= */
+
+        .cultura {
+            background: #eee4d4;
+            width: 100%;
+        }
+
+        .cultura-box {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .cultura-box i {
+            font-size: 3rem;
+            color: #a6531b;
+            margin-bottom: 20px;
+        }
+
+        /* =========================
+           EVENTO
+        ========================= */
+
+        .evento {
+            background:
+                linear-gradient(rgba(45,25,15,.9), rgba(45,25,15,.9)),
+                url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+            text-align: center;
+        }
+
+        .evento h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .evento p {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* =========================
+           GALERIA
+        ========================= */
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .foto {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            height: 280px;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        .foto:hover img {
+            transform: scale(1.1);
+        }
+
+        .legenda {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            padding: 18px;
+
+            color: white;
+
+            background: linear-gradient(transparent, rgba(0,0,0,.85));
+        }
+
+        /* =========================
+           CURIOSIDADES
+        ========================= */
+
+        .curiosidades {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .curiosidade {
+            background: white;
+            padding: 25px;
+            border-left: 5px solid #b45f25;
+            border-radius: 8px;
+        }
+
+        .curiosidade strong {
+            color: #8b451f;
+        }
+
+        /* =========================
+           REFERÊNCIAS
+        ========================= */
+
+        .referencias {
+            background: #332017;
+            color: white;
+        }
+
+        .referencias h2 {
+            color: white;
+        }
+
+        .referencias ul {
+            max-width: 850px;
+            margin: auto;
+            padding-left: 25px;
+        }
+
+        .referencias li {
+            margin-bottom: 12px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #1e120c;
+            color: #ddd;
+
+            text-align: center;
+
+            padding: 50px 20px;
+        }
+
+        footer h3 {
+            color: #e4a853;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            margin: 7px 0;
+        }
+
+        .copyright {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #4b3629;
+            font-size: .9rem;
+        }
+
+        /* =========================
+           ANIMAÇÃO
+        ========================= */
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        /* =========================
+           MAPA / LOCALIZAÇÃO
+        ========================= */
+
+        .mapa-box {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .mapa-info {
+            background: #3c2418;
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(60,40,20,.15);
+        }
+
+        .mapa-info i {
+            color: #e4a853;
+            font-size: 2.2rem;
+            margin-bottom: 18px;
+        }
+
+        .mapa-info h3 {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+
+        .mapa-info p {
+            color: #eee;
+            margin-bottom: 20px;
+        }
+
+        .mapa {
+            min-height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,.15);
+            border: 4px solid white;
+        }
+
+        .mapa iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            border: 0;
+            display: block;
+        }
+
+        .btn-mapa {
+            margin-top: 10px;
+        }
+
+        /* =========================
+           RESPONSIVO
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .introducao,
+            .mapa-box {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .processo {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .galeria {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            nav ul {
+                gap: 12px;
+                font-size: .9rem;
+            }
+
+            .hero {
+                min-height: 500px;
+            }
+
+            .cards,
+            .processo,
+            .galeria,
+            .curiosidades {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .titulo h2 {
+                font-size: 2rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <i class="fa-solid fa-drumstick-bite"></i>
+                CARNE DE SOL
+            </div>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#processo">Produção</a></li>
+                <li><a href="#cultura">Cultura</a></li>
+                <li><a href="#evento">Evento</a></li>
+                <li><a href="#fotos">Galeria</a></li>
+                <li><a href="#localizacao">Mapa</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span>TRADIÇÃO • CULTURA • GASTRONOMIA</span>
+
+                <h1>Carne de Sol de Carlos Chagas</h1>
+
+                <p>
+                    Uma expressão da gastronomia regional mineira,
+                    marcada pela tradição, pelo conhecimento artesanal
+                    e pela identidade cultural de Carlos Chagas, Minas Gerais.
+                </p>
+
+                <a href="#historia" class="btn">
+                    Conheça essa história
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HISTÓRIA
+        ========================== -->
+
+        <section id="historia">
+
+            <div class="container">
+
+                <div class="titulo">
+                    <span>Conheça</span>
+                    <h2>História e Tradição</h2>
+
+                    <p>
+                        A carne de sol representa muito mais do que um alimento:
+                        ela está relacionada aos costumes, à economia e à memória
+                        gastronômica de diferentes regiões brasileiras.
+                    </p>
+                </div>
+
+
+                <div class="introducao">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+                        alt="Prato com carne preparada">
+
+                    <div class="texto">
+
+                        <h3>Uma tradição que atravessa gerações</h3>
+
+                        <p>
+                            Em Carlos Chagas, município localizado no nordeste
+                            de Minas Gerais, a carne de sol está associada à
+                            tradição culinária regional e à valorização dos
+                            produtos e costumes locais.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            A preparação da carne está relacionada a antigas
+                            técnicas de conservação utilizadas antes da
+                            popularização dos sistemas modernos de refrigeração.
+                            A utilização do sal e a retirada de parte da umidade
+                            ajudavam a aumentar a durabilidade do alimento.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            Com o passar do tempo, essas técnicas deixaram de ser
+                            apenas formas de conservação e passaram a fazer parte
+                            da identidade gastronômica de diversas comunidades.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             IMPORTÂNCIA
+        ========================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="titulo">
+                    <span>Mais que alimento</span>
+                    <h2>Importância da Carne de Sol</h2>
+                </div>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <i class="fa-solid fa-landmark"></i>
+
+                        <h3>Patrimônio Cultural</h3>
+
+                        <p>
+                            A carne de sol faz parte dos costumes alimentares
+                            e da memória de muitas comunidades brasileiras,
+                            sendo transmitida entre gerações.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <i class="fa-solid fa-utensils"></i>
+
+                        <h3>Gastronomia Regional</h3>
+
+                        <p>
+                            O produto pode ser utilizado em diversos pratos,
+                            combinando-se com ingredientes tradicionais da
+                            culinária brasileira.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                        <h3>Economia Local</h3>
+
+                        <p>
+                            A valorização de produtos tradicionais pode
+                            contribuir para restaurantes, produtores,
+                            comércio e atividades turísticas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROCESSO
+        ========================== -->
+
+        <section id="processo">
+
+            <div class="container">
+
+                <div class="titulo">
+
+                    <span>Produção</span>
+
+                    <h2>Como a Carne de Sol é Preparada?</h2>
+
+                    <p>
+                        O processo tradicional envolve cuidados com a escolha
+                        da carne, salga, descanso e conservação.
+                    </p>
+
+                </div>
+
+
+                <div class="processo">
+
+                    <div class="etapa">
+
+                        <div class="numero">1</div>
+
+                        <h3>Seleção</h3>
+
+                        <p>
+                            Escolha de cortes bovinos adequados,
+                            observando qualidade e condições sanitárias.
+                        </p>
+
+                    </div>
+
+
+                    <div class="etapa">
+
+                        <div class="numero">2</div>
+
+                        <h3>Salga</h3>
+
+                        <p>
+                            A carne recebe sal em quantidade adequada,
+                            contribuindo para a retirada de parte da umidade.
+                        </p>
+
+                    </div>
+
+
+                    <div class="etapa">
+
+                        <div class="numero">3</div>
+
+                        <h3>Descanso</h3>
+
+                        <p>
+                            O produto passa por um período de descanso
+                            controlado para desenvolver sabor e textura.
+                        </p>
+
+                    </div>
+
+
+                    <div class="etapa">
+
+                        <div class="numero">4</div>
+
+                        <h3>Conservação</h3>
+
+                        <p>
+                            Após o processo, a carne deve ser armazenada
+                            adequadamente, seguindo cuidados de higiene.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DIFERENÇA
+        ========================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="titulo">
+
+                    <span>Conhecimento</span>
+
+                    <h2>Carne de Sol, Carne-Seca e Charque</h2>
+
+                    <p>
+                        Embora muitas vezes sejam confundidos, esses produtos
+                        apresentam diferenças no processo tradicional de produção.
+                    </p>
+
+                </div>
+
+
+                <div class="tabela">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Produto</th>
+                                <th>Características</th>
+                                <th>Processo</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td><strong>Carne de Sol</strong></td>
+
+                                <td>
+                                    Geralmente apresenta maior umidade
+                                    e textura mais macia.
+                                </td>
+
+                                <td>
+                                    Salga e período relativamente curto
+                                    de descanso.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td><strong>Carne-Seca</strong></td>
+
+                                <td>
+                                    Possui menor quantidade de umidade
+                                    e maior tempo de conservação.
+                                </td>
+
+                                <td>
+                                    Processo de salga e secagem mais intenso.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td><strong>Charque</strong></td>
+
+                                <td>
+                                    Produto tradicionalmente mais seco
+                                    e salgado.
+                                </td>
+
+                                <td>
+                                    Salga mais intensa e processo
+                                    de secagem prolongado.
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CULTURA
+        ========================== -->
+
+        <section id="cultura" class="cultura">
+
+            <div class="container">
+
+                <div class="cultura-box">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <div class="titulo">
+
+                        <span>Identidade</span>
+
+                        <h2>A Carne de Sol e a Cultura Regional</h2>
+
+                    </div>
+
+                    <p>
+                        A gastronomia é uma das formas pelas quais uma sociedade
+                        preserva sua história. Receitas, técnicas de preparo e
+                        hábitos alimentares podem carregar lembranças de famílias,
+                        comunidades e diferentes períodos históricos.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Nesse contexto, a carne de sol pode ser compreendida
+                        como parte da cultura alimentar brasileira. Em Carlos
+                        Chagas, a valorização da culinária regional contribui
+                        para fortalecer a identidade do município e despertar
+                        o interesse de visitantes pela história local.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ROTA BAHIA-MINAS
+        ========================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="titulo">
+
+                    <span>História e turismo</span>
+
+                    <h2>Relação com a Bahia-Minas</h2>
+
+                </div>
+
+                <div class="introducao">
+
+                    <div class="texto">
+
+                        <h3>Memória ferroviária e desenvolvimento regional</h3>
+
+                        <p>
+                            A antiga Estrada de Ferro Bahia e Minas teve
+                            importância histórica para a circulação de pessoas,
+                            mercadorias e produtos entre diferentes localidades.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            A memória da ferrovia permanece relacionada à
+                            identidade de municípios da região e também pode
+                            contribuir para o desenvolvimento de iniciativas
+                            ligadas ao turismo histórico e cultural.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            A gastronomia regional pode fazer parte desse
+                            processo, apresentando aos visitantes sabores,
+                            histórias e tradições que caracterizam a região.
+                        </p>
+
+                    </div>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=900&q=85"
+                        alt="Paisagem representando turismo e cultura">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EVENTO
+        ========================== -->
+
+        <section id="evento" class="evento">
+
+            <div class="container">
+
+                <h2>Pedal da Carne de Sol</h2>
+
+                <p>
+                    O Pedal da Carne de Sol é associado às atividades de
+                    cicloturismo e valorização da cultura regional de Carlos
+                    Chagas. Iniciativas desse tipo aproximam esporte, turismo,
+                    gastronomia e história, contribuindo para divulgar o município
+                    e suas tradições.
+                </p>
+
+                <a href="#fotos" class="btn">
+                    Conhecer a galeria
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CURIOSIDADES
+        ========================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="titulo">
+
+                    <span>Você sabia?</span>
+
+                    <h2>Curiosidades</h2>
+
+                </div>
+
+
+                <div class="curiosidades">
+
+                    <div class="curiosidade">
+                        <strong>01 — Conservação</strong>
+                        <p>
+                            A salga foi historicamente utilizada como uma das
+                            técnicas para aumentar a durabilidade de alimentos.
+                        </p>
+                    </div>
+
+
+                    <div class="curiosidade">
+                        <strong>02 — Gastronomia</strong>
+                        <p>
+                            A carne de sol pode ser utilizada em pratos como
+                            escondidinho, arroz, feijão, mandioca e sanduíches.
+                        </p>
+                    </div>
+
+
+                    <div class="curiosidade">
+                        <strong>03 — Cultura</strong>
+                        <p>
+                            Técnicas culinárias tradicionais podem ser transmitidas
+                            entre gerações e ajudar a preservar a memória local.
+                        </p>
+                    </div>
+
+
+                    <div class="curiosidade">
+                        <strong>04 — Turismo</strong>
+                        <p>
+                            A gastronomia regional pode funcionar como atrativo
+                            turístico e ajudar a divulgar a identidade de um município.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALERIA
+        ========================== -->
+
+        <section id="fotos">
+
+            <div class="container">
+
+                <div class="titulo">
+
+                    <span>Imagens</span>
+
+                    <h2>Galeria</h2>
+
+                    <p>
+                        Registros relacionados à gastronomia, cultura e
+                        identidade regional.
+                    </p>
+
+                </div>
+
+
+                <div class="galeria">
+
+                    <div class="foto">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+                            alt="Carne preparada">
+
+                        <div class="legenda">
+                            <strong>Preparo gastronômico</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="foto">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=85"
+                            alt="Churrasco e gastronomia">
+
+                        <div class="legenda">
+                            <strong>Gastronomia regional</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="foto">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=900&q=85"
+                            alt="Carne preparada na culinária">
+
+                        <div class="legenda">
+                            <strong>Tradição culinária</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             LOCALIZAÇÃO
+        ========================== -->
+
+        <section id="localizacao">
+
+            <div class="container">
+
+                <div class="titulo">
+                    <span>Localização</span>
+                    <h2>Onde Encontrar a Carne de Sol?</h2>
+                    <p>
+                        Consulte o mapa para visualizar a localização de Carlos Chagas,
+                        Minas Gerais, e conhecer a região relacionada à tradição da Carne de Sol.
+                    </p>
+                </div>
+
+                <div class="mapa-box">
+
+                    <div class="mapa-info">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h3>Carne de Sol de Carlos Chagas - MG</h3>
+
+                        <p>
+                            Explore no mapa a região de Carlos Chagas, no nordeste de
+                            Minas Gerais, e conheça o território associado à tradição
+                            gastronômica apresentada neste projeto.
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Carne%20de%20Sol%20Carlos%20Chagas%20MG"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-mapa">
+                            Abrir no Google Maps
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps?q=Carne%20de%20Sol%20Carlos%20Chagas%20MG&output=embed"
+                            title="Mapa de localização da Carne de Sol em Carlos Chagas - MG"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             REFERÊNCIAS
+        ========================== -->
+
+        <section class="referencias">
+
+            <div class="container">
+
+                <div class="titulo">
+
+                    <span>Pesquisa</span>
+
+                    <h2>Referências e Fontes</h2>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        Informações históricas e culturais sobre Carlos Chagas
+                        e a região do Vale do Mucuri.
+                    </li>
+
+                    <li>
+                        Pesquisas sobre a gastronomia tradicional brasileira
+                        e técnicas históricas de conservação de alimentos.
+                    </li>
+
+                    <li>
+                        Materiais relacionados à antiga Estrada de Ferro
+                        Bahia e Minas e ao patrimônio histórico regional.
+                    </li>
+
+                    <li>
+                        Informações sobre eventos culturais, turismo,
+                        cicloturismo e gastronomia de Carlos Chagas.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <h3>
+                <i class="fa-solid fa-drumstick-bite"></i>
+                Carne de Sol de Carlos Chagas - MG
+            </h3>
+
+            <p>
+                Projeto escolar sobre gastronomia, cultura,
+                história e identidade regional.
+            </p>
+
+            <p>
+                <strong>Escola Estadual Doutor João Beraldo</strong>
+            </p>
+
+
+
+            <p>
+            Desenvolvido por
+            <strong>Michael Junio</strong>
+        </p>
+            <p>
+                Projeto desenvolvido sob orientação do Professor
+                <strong>André Gomes Andrade</strong>
+            </p>
+           
+            <div class="copyright">
+
+                © 2026 — Projeto Escolar | Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
